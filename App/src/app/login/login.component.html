@@ -1,0 +1,24 @@
+<div class="row mt-5 w-100">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-dark text-light">
+                Login Here...
+            </div>
+            <form [formGroup]='loginForm'>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-at fa-lg"></i></span>
+                    <input type="email" formControlName='email' class="form-control" placeholder="Username">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-key fa-lg"></i></span>
+                    <input type="password" formControlName='password' class="form-control" placeholder="password">
+                </div>
+                <input type="submit" (click)='getlogin()' class="btn btn-primary float-right w-25 mb-3" value="Login">
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
